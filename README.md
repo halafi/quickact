@@ -16,12 +16,14 @@ Add the shit you need like types. Start developing. That's it.
 - [x] Webpack Dev Server
 - [x] Webpack Production (+ gzip)
 - [x] Eslint
+- [x] Editorconfig
 - [x] Prettier
 - [x] Stylelint
 - [x] Styled Components + @rebass/grid
 - [x] Normalize
 - [x] Babel + Polyfills (CoreJS 3)
-- [x] Jest
+- [x] Jest (without coverage)
+- [ ] Gulp
 - [ ] Enzyme
 - [ ] TypeScript
 - [ ] Flow
