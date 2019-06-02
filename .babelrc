@@ -1,0 +1,25 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": 3,
+      }
+    ],
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-syntax-dynamic-import",
+    "react-hot-loader/babel",
+    [
+      "styled-components",
+      {
+        "displayName": false
+      }
+    ],
+  ]
+}
+
