@@ -7,6 +7,7 @@ Just shallow clone and setup as a new repo:
 1. `git clone --depth=1 --branch=master git@github.com:halafi/quickact.git new`
 2. `rm -rf ./new/.git`
 3. Update all dependencies to latest versions if applicable with e.g. [npm-check-updates](https://github.com/tjunnone/npm-check-updates): `ncu -u`
+4. `npm i`
 
 Add the shit you need like types. Start developing. That's it.
 
