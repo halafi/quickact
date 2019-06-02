@@ -24,11 +24,13 @@ Add the shit you need like types. Start developing. That's it.
 - [x] Normalize
 - [x] Babel + Polyfills (CoreJS 3)
 - [x] Jest (without coverage)
+- [x] Google Fonts - Roboto 400,700
 - [ ] Gulp
 - [ ] Enzyme
 - [ ] TypeScript
 - [ ] Flow
 - [ ] Code Splitting
 - [ ] Routing
+- [ ] Helmet
 - [ ] Server Side Rendering
 - [ ] Prerendering
