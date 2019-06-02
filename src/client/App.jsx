@@ -13,7 +13,7 @@ if (container) {
       <>
         <Normalize />
         <Root />
-      </>{' '}
+      </>
     </ThemeProvider>,
     container,
   );
