@@ -25,7 +25,9 @@ Add the shit you need like types. Start developing. That's it.
 - [x] Normalize
 - [x] Babel + Polyfills (CoreJS 3)
 - [x] Jest (without coverage)
-- [x] Google Fonts - Roboto 400,700
+- [x] Google Fonts - Roboto 400,700 (not optimized for page speed insights)
+- [x] Optional (pre-installed): ramda
+- [x] Optional (pre-installed): date-fns
 - [ ] Gulp
 - [ ] Enzyme
 - [ ] TypeScript
