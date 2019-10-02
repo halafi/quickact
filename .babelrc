@@ -15,7 +15,7 @@
     "@babel/plugin-syntax-dynamic-import",
     "react-hot-loader/babel",
     [
-      "styled-components",
+      "babel-plugin-styled-components",
       {
         "displayName": false
       }
