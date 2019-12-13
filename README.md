@@ -1,6 +1,7 @@
 ## ⚛️ Quickact
 
 Production ready lightweight React starter.
+Optimized for one-man SPA projects.
 
 Just shallow clone and setup as a new repo:
 
@@ -20,14 +21,14 @@ Add the shit you need like types. Start developing. That's it.
 - [x] Eslint
 - [x] Editorconfig
 - [x] Prettier
-- [x] Stylelint
 - [x] Styled Components + @rebass/grid
 - [x] Normalize
 - [x] Babel + Polyfills (CoreJS 3)
-- [x] Jest (without coverage)
 - [x] Google Fonts - Roboto 400,700 (not optimized for page speed insights)
-- [x] Optional (pre-installed): ramda
-- [x] Optional (pre-installed): date-fns
+- [x] Jest (without coverage)
+- [x] pre-installed: ramda
+- [x] pre-installed: date-fns
+- [ ] Stylelint
 - [ ] Gulp
 - [ ] Enzyme
 - [ ] TypeScript
