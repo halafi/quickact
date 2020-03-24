@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex } from '@rebass/grid';
+import { Flex } from 'reflexbox/styled-components';
 import styled from 'styled-components';
 import { hot } from 'react-hot-loader';
 

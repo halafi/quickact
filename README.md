@@ -21,7 +21,7 @@ Add the shit you need like types. Start developing. That's it.
 - [x] Eslint
 - [x] Editorconfig
 - [x] Prettier
-- [x] Styled Components + @rebass/grid
+- [x] Styled Components, reflexbox
 - [x] Normalize
 - [x] Babel + Polyfills (CoreJS 3)
 - [x] Google Fonts - Roboto 400,700 (not optimized for page speed insights)
