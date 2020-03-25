@@ -10,10 +10,10 @@ module.exports = (env, argv) => ({
     rules: [
       {
         test: /\.ts$|\.tsx$/,
-        loader: 'ts-loader',
-        // options: {
-        //   babelrc: true,
-        // },
+        loader: 'babel-loader',
+        options: {
+          babelrc: true,
+        },
         exclude: /node_modules/,
       },
     ],
