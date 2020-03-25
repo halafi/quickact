@@ -1,6 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 import { render } from 'react-dom';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
+// @ts-ignore
 import { Normalize } from 'styled-normalize';
 import ThemeDefault from './records/Theme';
 import Root from './scenes/Root';
