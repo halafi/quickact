@@ -7,9 +7,11 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended',
     'airbnb',
+    // 'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+    'prettier/react',
+    'plugin:prettier/recommended',
   ],
   settings: {
     'import/resolver': {
@@ -47,6 +49,6 @@ module.exports = {
         devDependencies: ['config/**'],
       },
     ],
-    'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }],
+    'react/jsx-filename-extension': ['error', { extensions: ['.ts', '.tsx'] }],
   },
 };

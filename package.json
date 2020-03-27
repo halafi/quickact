@@ -12,8 +12,8 @@
     "webpack:prod": "webpack --mode production --config config/webpack.prod.js --env.NODE_ENV=production",
     "eslint": "eslint --ext .ts --ext .tsx .",
     "eslint:fix": "eslint --fix --ext .ts --ext .tsx .",
-    "types": "tsc",
-    "types:watch": "tsc --watch"
+    "types": "tsc --noEmit",
+    "types:watch": "tsc --noEmit --watch"
   },
   "author": "Filip Halas",
   "license": "MIT",
