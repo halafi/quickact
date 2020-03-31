@@ -9,7 +9,6 @@
     "types": [ "node"],
     "moduleResolution" : "node",
     "strict": true,
-    "outDir": "./tmp"
   },
   "exclude": [ "node_modules" ],
   "include": [ "**/*.ts", "**/*.tsx" ]

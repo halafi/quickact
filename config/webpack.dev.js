@@ -29,7 +29,7 @@ module.exports = (env, argv) => ({
   },
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: path.resolve(__dirname, '../src/client'), // index.html
+    contentBase: path.resolve(__dirname, '../public'), // index.html
     publicPath: '/', // where to serve bundle
     disableHostCheck: true,
   },

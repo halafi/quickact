@@ -50,5 +50,6 @@ module.exports = {
       },
     ],
     'react/jsx-filename-extension': ['error', { extensions: ['.ts', '.tsx'] }],
+    'no-unused-vars': 'off',
   },
 };
