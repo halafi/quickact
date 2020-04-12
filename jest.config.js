@@ -1,4 +1,3 @@
 module.exports = {
-  setupFiles: ['./config/jestSetup.js'],
-  setupFilesAfterEnv: ['./config/jestSetupFramework.js'],
+  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
 };

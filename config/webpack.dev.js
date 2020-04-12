@@ -32,6 +32,7 @@ module.exports = (env, argv) => ({
     contentBase: path.resolve(__dirname, '../public'), // index.html
     publicPath: '/', // where to serve bundle
     disableHostCheck: true,
+    historyApiFallback: true,
   },
   plugins: [
     new Assets({
