@@ -4,12 +4,12 @@ const path = require('path');
 
 module.exports = (env, argv) => ({
   entry: {
-    bundle: path.resolve(__dirname, '../src/client/index.js'),
+    bundle: path.resolve(__dirname, '../src/client/index.ts'),
   },
   module: {
     rules: [
       {
-        test: /\.js$|\.jsx$/,
+        test: /\.ts$|\.tsx$/,
         loader: 'babel-loader',
         options: {
           babelrc: true,
@@ -19,10 +19,7 @@ module.exports = (env, argv) => ({
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
-    alias: {
-      'react-dom': '@hot-loader/react-dom',
-    },
+    extensions: ['.ts', '.tsx', '.js'],
   },
   mode: argv.mode,
   output: {
@@ -32,9 +29,10 @@ module.exports = (env, argv) => ({
   },
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: path.resolve(__dirname, '../src/client'), // index.html
+    contentBase: path.resolve(__dirname, '../public'), // index.html
     publicPath: '/', // where to serve bundle
     disableHostCheck: true,
+    historyApiFallback: true,
   },
   plugins: [
     new Assets({

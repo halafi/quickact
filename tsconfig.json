@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es6",
+    "jsx": "react",
+    "sourceMap": true,
+    "lib": [ "DOM", "DOM.Iterable", "ES6" ],
+    "typeRoots": [ "node_modules/@types" ],
+    "types": [ "node", "jest" ],
+    "moduleResolution" : "node",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "exclude": [ "node_modules",  "**/*.spec.ts" ],
+  "include": [ "**/*.ts", "**/*.tsx" ]
+}

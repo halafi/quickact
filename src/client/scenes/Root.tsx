@@ -1,12 +1,13 @@
-import React from 'react';
-import { Flex } from 'reflexbox/styled-components';
+import * as React from 'react';
+import { Flex } from 'rebass/styled-components';
 import styled from 'styled-components';
+// @ts-ignore
 import { hot } from 'react-hot-loader';
 
 const Container = styled(Flex)`
   height: 100vh;
-  color: ${({ theme }) => theme.secondary};
-  background-color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors.primary};
 `;
 
 const Root = () => (

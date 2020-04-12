@@ -5,12 +5,12 @@ const path = require('path');
 
 module.exports = (env, argv) => ({
   entry: {
-    bundle: path.resolve(__dirname, '../src/client/index.js'),
+    bundle: path.resolve(__dirname, '../src/client/index.ts'),
   },
   module: {
     rules: [
       {
-        test: /\.js$|\.jsx$/,
+        test: /\.ts$|\.tsx$/,
         loader: 'babel-loader',
         options: {
           babelrc: true,
@@ -20,7 +20,7 @@ module.exports = (env, argv) => ({
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.ts', '.tsx', '.js'],
   },
   mode: argv.mode,
   output: {
