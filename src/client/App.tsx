@@ -1,33 +1,18 @@
 import * as React from 'react';
-import { render } from 'react-dom';
-import { ThemeProvider, createGlobalStyle } from 'styled-components';
-// @ts-ignore
-import { Normalize } from 'styled-normalize';
+import { hydrate } from 'react-dom';
+import { ThemeProvider } from 'styled-components';
+import { BrowserRouter } from 'react-router-dom';
 import { themeDefault } from './records/Theme';
-import type { Theme } from './records/Theme';
-import Root from './scenes/Root';
+import Routes from './Routes';
 
-const container = document.getElementById('container');
-
-type GlobalStyleProps = {
-  theme: Theme;
-};
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    color: ${({ theme }: GlobalStyleProps) => theme.colors.text};
-    font-family: 'Baloo 2', cursive;
-  }
-`;
+const container = document.getElementById('root');
 
 if (container) {
-  render(
+  hydrate(
     <ThemeProvider theme={themeDefault}>
-      <>
-        <Normalize />
-        <GlobalStyle />
-        <Root />
-      </>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
     </ThemeProvider>,
     container,
   );

@@ -29,10 +29,13 @@ module.exports = (env, argv) => ({
   },
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: path.resolve(__dirname, '../public'), // index.html
+    // contentBase: path.resolve(__dirname, '../public'), // middleware can be used to serve static assets
     publicPath: '/', // where to serve bundle
     disableHostCheck: true,
     historyApiFallback: true,
+    proxy: {
+      '*': 'http://localhost:3000',
+    },
   },
   plugins: [
     new Assets({
@@ -41,7 +44,6 @@ module.exports = (env, argv) => ({
       prettyPrint: true,
     }),
     new webpack.DefinePlugin({
-      __DEV__: true,
       'process.env': {
         NODE_ENV: JSON.stringify(argv.mode),
       },

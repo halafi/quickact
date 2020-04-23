@@ -30,14 +30,14 @@ Start developing. That's it.
 - [x] Jest (without coverage and component testing setup)
 - [x] Lib: ramda
 - [x] Lib: date-fns
+- [x] Routing
+- [x] Server Side Rendering
+- [x] Prerendering
 
 ### ❔ What might be included in the future
-- [ ] Routing
 - [ ] Helmet
 - [ ] Code Splitting
 - [ ] PWA, Workbox
 
-### ❌ What is probably not going to be included
+### ❌ What is not going to be included
 - [ ] Stylelint
-- [ ] Server Side Rendering
-- [ ] Prerendering
