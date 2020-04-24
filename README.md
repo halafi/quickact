@@ -13,6 +13,23 @@ Just shallow clone and setup as a new repo:
 
 Start developing. That's it.
 
+## Deploy with Docker as on-demand SSR and static asset server
+
+Not recommended, unless you really want server and cannot pre-render majority of your pages.
+
+1. `docker build --tag quickact:1.0 .`
+2. `docker run --publish 8080:3000 --detach --name qa quickact:1.0`
+
+or
+
+1. `docker-compose up`
+
+## Deploy only static files located in dist folder with CDN
+
+1. `npm run build`
+
+you can use Netlify or setup github pages for your repository
+
 ### 🔧 What's included
 
 - [x] Client Side Rendering
@@ -32,9 +49,9 @@ Start developing. That's it.
 - [x] Lib: date-fns
 - [x] Routing
 - [x] Server Side Rendering
-- [x] Prerendering
 
 ### ❔ What might be included in the future
+- [ ] Prerendering
 - [ ] Helmet
 - [ ] Code Splitting
 - [ ] PWA, Workbox

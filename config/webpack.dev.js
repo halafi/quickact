@@ -33,6 +33,7 @@ module.exports = (env, argv) => ({
     publicPath: '/', // where to serve bundle
     disableHostCheck: true,
     historyApiFallback: true,
+    // host: '0.0.0.0', // needed for docker development
     proxy: {
       '*': 'http://localhost:3000',
     },
