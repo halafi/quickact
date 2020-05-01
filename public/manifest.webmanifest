@@ -1,6 +1,6 @@
 {
-  "short_name":"quickact",
-  "name":"react-starter",
+  "short_name":"app",
+  "name":"react-app",
   "icons":[
     {
       "src": "favicon.ico",
