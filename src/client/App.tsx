@@ -22,13 +22,15 @@ const GlobalStyle = createGlobalStyle`
 
 if (container) {
   render(
-    <ThemeProvider theme={themeDefault}>
-      <>
-        <Normalize />
-        <GlobalStyle />
-        <Root />
-      </>
-    </ThemeProvider>,
+    <React.StrictMode>
+      <ThemeProvider theme={themeDefault}>
+        <>
+          <Normalize />
+          <GlobalStyle />
+          <Root />
+        </>
+      </ThemeProvider>
+    </React.StrictMode>,
     container,
   );
 }
