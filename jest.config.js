@@ -1,3 +1,6 @@
 module.exports = {
-  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
+  moduleFileExtensions: ['ts', 'tsx', 'json', 'js'],
+  rootDir: 'src',
+  coverageDirectory: '../coverage',
+  testEnvironment: 'jsdom',
 };

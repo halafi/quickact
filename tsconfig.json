@@ -11,6 +11,5 @@
     "strict": true,
     "esModuleInterop": true
   },
-  "exclude": [ "node_modules",  "**/*.spec.ts" ],
-  "include": [ "**/*.ts", "**/*.tsx" ]
+  "exclude": [ "node_modules", "dist" ]
 }
