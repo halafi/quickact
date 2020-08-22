@@ -1,4 +1,4 @@
-# ⚛️ Quickact - template for your next React app
+# Template for your next React app
 
 Production ready lightweight React starter.
 
@@ -49,6 +49,7 @@ Navigate to [localhost:8080](http://localhost:8080). You should see your app run
 - [x] Lib: date-fns
 
 ### ❔ What might be included in the future
+- [ ] [Rome](https://github.com/romefrontend/rome) (once it is more mature and not just a linter could replace Eslint, Webpack, Babel...)
 - [ ] Routing
 - [ ] Code Splitting
 - [ ] PWA, Workbox
