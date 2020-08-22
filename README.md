@@ -1,19 +1,36 @@
-## ⚛️ Quickact
+# ⚛️ Quickact - template for your next React app
 
 Production ready lightweight React starter.
 
-If you don't like `create-react-app` after you eject.
+If you plan to use React in production and don't like `create-react-app` after you eject.
 
-Just shallow clone and setup as a new repo:
+Primarily aimed at **client side single page apps**.
 
-1. `git clone --depth=1 --branch=master git@github.com:halafi/quickact.git newProjectName`
-2. `rm -rf ./newProjectName/.git` (or with <a href="https://github.com/Rich-Harris/degit" target="_blank">degit</a> just `npx degit halafi/quickact newProjectName`)
-3. Update all dependencies to latest versions if applicable with e.g. [npm-check-updates](https://github.com/tjunnone/npm-check-updates): `ncu -u`
-4. `npm i`
+To create a new project based on this template using <a href="https://github.com/Rich-Harris/degit" target="_blank">degit</a>:
 
-Start developing. That's it.
+```bash
+  npx degit halafi/quickact react-app
+  cd react-app
+```
 
-### 🔧 What's included
+## Get started
+
+Install the dependencies...
+
+```bash
+  cd react-app
+  yarn
+```
+
+...then start:
+
+```bash
+  yarn start
+```
+
+Navigate to [localhost:8080](http://localhost:8080). You should see your app running.
+
+## 🔧 What's included
 
 - [x] Client Side Rendering
 - [x] Hot Module Replacement (HMR)
@@ -24,7 +41,7 @@ Start developing. That's it.
 - [x] Prettier
 - [x] Browserslist
 - [x] Editorconfig
-- [x] Styled Components + Styled System using rebass
+- [x] Styled Components + Styled System using rebass (might change this to [linaria](https://github.com/callstack/linaria))
 - [x] Normalize
 - [x] Babel + Polyfills (CoreJS 3)
 - [x] Jest (without coverage and component testing setup)
@@ -33,11 +50,11 @@ Start developing. That's it.
 
 ### ❔ What might be included in the future
 - [ ] Routing
-- [ ] Helmet
 - [ ] Code Splitting
 - [ ] PWA, Workbox
 
 ### ❌ What is probably not going to be included
 - [ ] Stylelint
 - [ ] Server Side Rendering
-- [ ] Prerendering
+- [ ] Prerendering (for pre-rendering on steroids check out [Elderjs](https://github.com/elderjs/elderjs))
+- [ ] Helmet / SEO
