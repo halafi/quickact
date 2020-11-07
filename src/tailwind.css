@@ -1,0 +1,8 @@
+/* combination of Normalize.css and some additional base styles */
+@tailwind base;
+
+/* reusable styles like cards and form elements, etc */
+@tailwind components;
+
+/* all tailwind utilities */
+@tailwind utilities;

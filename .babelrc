@@ -8,7 +8,7 @@
         "useBuiltIns": "entry",
         "corejs": 3
       }
-    ],
+    ]
   ],
   "plugins": [
     "@babel/plugin-proposal-object-rest-spread",
@@ -19,8 +19,7 @@
       {
         "displayName": false
       }
-    ],
-    "ramda"
+    ]
   ]
 }
 

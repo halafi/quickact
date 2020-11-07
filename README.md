@@ -45,7 +45,6 @@ Navigate to [localhost:8080](http://localhost:8080). You should see your app run
 - [x] Normalize
 - [x] Babel + Polyfills (CoreJS 3)
 - [x] Jest (without coverage and component testing setup)
-- [x] Lib: ramda
 - [x] Lib: date-fns
 
 ### ❔ What might be included in the future
