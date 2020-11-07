@@ -41,7 +41,7 @@ Navigate to [localhost:8080](http://localhost:8080). You should see your app run
 - [x] Prettier
 - [x] Browserslist
 - [x] Editorconfig
-- [x] Styled Components + Styled System using rebass (might change this to [linaria](https://github.com/callstack/linaria))
+- [x] Styled Components (might change this to [linaria](https://github.com/callstack/linaria))
 - [x] Normalize
 - [x] Babel + Polyfills (CoreJS 3)
 - [x] Jest (without coverage and component testing setup)
