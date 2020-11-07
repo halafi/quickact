@@ -12,7 +12,7 @@ const Container = styled(Flex)`
 
 const Root = () => (
   <Container justifyContent="center" alignItems="center">
-    <h1>Hello World</h1>
+    <h1>Hello World from filip</h1>
   </Container>
 );
 

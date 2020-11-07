@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = (env, argv) => ({
   entry: {
-    bundle: path.resolve(__dirname, '../src/client/index.ts'),
+    bundle: path.resolve(__dirname, '../src/index.ts'),
   },
   module: {
     rules: [
