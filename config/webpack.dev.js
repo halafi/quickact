@@ -35,6 +35,7 @@ module.exports = (env, argv) => ({
     historyApiFallback: true,
   },
   plugins: [
+    // TODO: react refresh (https://github.com/pmmmwh/react-refresh-webpack-plugin) once that works with wp 5
     new Assets({
       path: 'dist',
       filename: 'assets.json',

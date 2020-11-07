@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { Flex } from 'rebass/styled-components';
 import styled from 'styled-components';
-// @ts-ignore
-import { hot } from 'react-hot-loader';
 
 const Container = styled(Flex)`
   height: 100vh;
@@ -12,8 +10,8 @@ const Container = styled(Flex)`
 
 const Root = () => (
   <Container justifyContent="center" alignItems="center">
-    <h1>Hello World from filip</h1>
+    <h1>Hello World</h1>
   </Container>
 );
 
-export default hot(module)(Root);
+export default Root;
