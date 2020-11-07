@@ -1,8 +1,5 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-// @ts-ignore
-// import { themeDefault } from './records/Theme';
-// import type { Theme } from './records/Theme';
 import Root from './scenes/Root';
 
 const container = document.getElementById('container');
