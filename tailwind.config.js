@@ -22,10 +22,11 @@ module.exports = {
       xl: '1280px',
     },
     colors: {
-      // custom theme colors (need to be set in tailwind.css)
-      primary: 'var(--color-primary)',
-      secondary: 'var(--color-secondary)',
-      // </>
+      // custom theme colors (need to be uncommented in tailwind.css) - use if needed
+      /*
+       primary: 'var(--color-primary)',
+       secondary: 'var(--color-secondary)',
+      */
       transparent: 'transparent',
       current: 'currentColor',
 

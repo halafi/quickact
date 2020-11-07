@@ -1,7 +1,14 @@
-/* custom theme colors */
-:root {
-  --color-primary: #000000;
-  --color-secondary: #fff;
+/* custom theme colors - use if needed */
+/*
+  :root {
+    --color-primary: #fff;
+    --color-secondary: #000000;
+  }
+*/
+
+body {
+  color: theme('colors.black');
+  background-color: theme('colors.white');
 }
 
 /* combination of Normalize.css and some additional base styles */
