@@ -7,3 +7,5 @@ logs
 
 # Tests
 /coverage
+
+.DS_Store

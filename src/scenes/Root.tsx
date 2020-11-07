@@ -1,19 +1,19 @@
 import * as React from 'react';
-import styled from 'styled-components';
+import './Root.css';
 
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: ${({ theme }) => theme.colors.secondary};
-  background-color: ${({ theme }) => theme.colors.primary};
-`;
+// const Container = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   color: ${({ theme }) => theme.colors.secondary};
+//   background-color: ${({ theme }) => theme.colors.primary};
+// `;
 
 const Root = () => (
-  <Container>
+  <div className="root">
     <h1>Hello World</h1>
-  </Container>
+  </div>
 );
 
 export default Root;
