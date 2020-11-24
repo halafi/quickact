@@ -7,3 +7,6 @@ logs
 
 # Tests
 /coverage
+
+.DS_Store
+src/tailwind.generated.css

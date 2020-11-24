@@ -1,6 +1,5 @@
 const webpack = require('webpack');
-const Assets = require('assets-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = (env, argv) => ({
@@ -17,6 +16,10 @@ module.exports = (env, argv) => ({
         },
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
+      },
     ],
   },
   resolve: {
@@ -30,19 +33,14 @@ module.exports = (env, argv) => ({
   },
   devtool: false,
   plugins: [
-    new Assets({
-      path: 'dist',
-      filename: 'assets.json',
-      prettyPrint: true,
+    new MiniCssExtractPlugin({
+      filename: 'all.css', // TODO: minify
+      chunkFilename: 'tailwind.css',
     }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(argv.mode),
       },
-    }),
-    new CompressionPlugin({
-      test: /\.js$/i,
-      threshold: 10240,
     }),
   ],
 });

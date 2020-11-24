@@ -1,0 +1,21 @@
+/* custom theme colors - use if needed */
+/*
+  :root {
+    --color-primary: #fff;
+    --color-secondary: #000000;
+  }
+*/
+
+body {
+  color: theme('colors.black');
+  background-color: theme('colors.white');
+}
+
+/* combination of Normalize.css and some additional base styles */
+@tailwind base;
+
+/* reusable styles like cards and form elements, etc */
+@tailwind components;
+
+/* all tailwind utilities */
+@tailwind utilities;
