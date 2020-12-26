@@ -9,7 +9,8 @@
     "types": [ "node", "jest" ],
     "moduleResolution" : "node",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
   "exclude": [ "node_modules", "dist" ]
 }

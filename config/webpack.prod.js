@@ -1,8 +1,8 @@
 const webpack = require('webpack');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = (env, argv) => ({
+  mode: argv.mode,
   entry: {
     bundle: path.resolve(__dirname, '../src/index.ts'),
   },
@@ -16,16 +16,11 @@ module.exports = (env, argv) => ({
         },
         exclude: /node_modules/,
       },
-      {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
-      },
     ],
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
   },
-  mode: argv.mode,
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: 'bundle.js',
@@ -33,10 +28,6 @@ module.exports = (env, argv) => ({
   },
   devtool: false,
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'all.css', // TODO: minify
-      chunkFilename: 'tailwind.css',
-    }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(argv.mode),

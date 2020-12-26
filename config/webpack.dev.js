@@ -1,8 +1,8 @@
 const webpack = require('webpack');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = (env, argv) => ({
+  mode: argv.mode,
   entry: {
     bundle: path.resolve(__dirname, '../src/index.ts'),
   },
@@ -16,16 +16,11 @@ module.exports = (env, argv) => ({
         },
         exclude: /node_modules/,
       },
-      {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
-      },
     ],
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
   },
-  mode: argv.mode,
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: 'bundle.js',
@@ -39,11 +34,7 @@ module.exports = (env, argv) => ({
     historyApiFallback: true,
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'all.css',
-      chunkFilename: 'tailwind.css',
-    }),
-    // TODO: react refresh (https://github.com/pmmmwh/react-refresh-webpack-plugin) once that works with webpack5
+    // TODO: react refresh (https://github.com/pmmmwh/react-refresh-webpack-plugin) once that works with webpack 5
     new webpack.DefinePlugin({
       __DEV__: true,
       'process.env': {
