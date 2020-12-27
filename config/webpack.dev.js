@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = (env, argv) => ({
@@ -15,6 +16,10 @@ module.exports = (env, argv) => ({
           babelrc: true,
         },
         exclude: /node_modules/,
+      },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
       },
     ],
   },
@@ -34,6 +39,10 @@ module.exports = (env, argv) => ({
     historyApiFallback: true,
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'all.css',
+      chunkFilename: 'tailwind.css',
+    }),
     // TODO: react refresh (https://github.com/pmmmwh/react-refresh-webpack-plugin) once that works with webpack 5
     new webpack.DefinePlugin({
       __DEV__: true,

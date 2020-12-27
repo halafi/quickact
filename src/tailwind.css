@@ -1,0 +1,31 @@
+body {
+  color: theme('colors.black');
+  background-color: theme('colors.white');
+}
+
+/* combination of normalize and some additional base styles */
+@tailwind base;
+
+/* https://tailwindcss.com/docs/preflight#headings-are-unstyled */
+@layer base {
+  h1 {
+    /* @apply block; */
+    @apply text-2xl;
+  }
+  h2 {
+    /* @apply block; */
+    @apply text-xl;
+  }
+  /* h3 {
+    @apply text-lg;
+  } */
+  a {
+    @apply text-blue-600 underline;
+  }
+}
+
+/* reusable styles like cards and form elements, etc */
+@tailwind components;
+
+/* all tailwind utilities */
+@tailwind utilities;

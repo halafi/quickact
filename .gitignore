@@ -9,3 +9,4 @@ logs
 /coverage
 
 .DS_Store
+src/tailwind.generated.css
