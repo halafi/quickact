@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "run-p watch:tailwind start",
-    "start": "webpack serve --mode development --hot --inline --config config/webpack.dev.js --open --env.NODE_ENV=development",
+    "start": "webpack serve --mode development --hot --inline --config config/webpack.dev.js --open --env NODE_ENV=development",
     "prebuild": "rimraf dist && npm run build:tailwind",
     "build": "npm run prebuild && npm run webpack && cp -R public/* ./dist",
     "build:tailwind": "postcss src/tailwind.css -o src/tailwind.generated.css --env production",
